@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { FiGithub, FiTwitter } from "react-icons/fi";
 import { SiGithubsponsors } from "react-icons/si";
 
@@ -26,5 +25,5 @@ export const SideMenu = () => {
                 <p className="font-normal text-sm text-zinc-700 hover:text-white pt-4">Hosted on Vercel.</p>
             </div>
         </aside>
-    )
-}
+    );
+};

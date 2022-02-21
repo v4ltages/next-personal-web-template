@@ -3,8 +3,8 @@ import Head from "next/head";
 import { motion } from "framer-motion";
 import { Footer } from "../components/Footer";
 import { GitHubButton } from "../components/GitHubButton";
+import { SideMenu } from "../components/SideMenu";
 import profilePic from '/public/avatar.png'
-import { SideMenu } from "../components/sideMenu";
 
 const Home: NextPage = () => {
     return (
