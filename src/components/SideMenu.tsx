@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FiGithub, FiTwitter } from "react-icons/fi";
-import { SiGithubsponsors } from "react-icons/Si"
+import { SiGithubsponsors } from "react-icons/Si";
 
 export const SideMenu = () => {
     return (
