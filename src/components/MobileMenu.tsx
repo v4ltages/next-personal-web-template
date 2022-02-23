@@ -24,7 +24,7 @@ export const MobileMenu = () => {
 
 const MobileContent = () => {
     return (
-        <motion.div className="fixed bottom-0 left-0 right-0 h-[100vh] mb-24 bg-black border-b border-neutral-800 text-zinc-300 justify-between flex-col z-20">
+        <motion.div className="fixed md:hidden bottom-0 left-0 right-0 h-[100vh] mb-24 bg-black border-b border-neutral-800 text-zinc-300 justify-between flex-col z-20">
             <menu className="flex mt-48 flex-col p-4 gap-4 font-semibold">
                 <PageLink href={"/"}>
                     <div className="flex gap-2 rounded px-4 py-2 items-center">
