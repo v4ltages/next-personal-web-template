@@ -22,7 +22,7 @@ const Home: NextPage = () => {
                     <section className="md:pl-8 lg:w-[32rem]">
                         <h1 className="font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-[#D8B7EE] via-[#E494AC] to-[#A1CBF7]">Hello there.</h1>
                         <p className="font-normal text-lg">
-                            This is a personal website/portfolio template made with Next.js, React.js and Tailwind CSS for easily making ur own personal website without the hassle. 
+                            This is a demo of my personal website template made with Next.js, React.js and Tailwind CSS for easily making ur own personal website without the hassle. 
                         </p>
                         <motion.a target="_blank" href="https://github.com/v4ltages/next-personal-web-template" rel="noopener noreferrer" whileHover={{ scale: 0.97 }} whileTap={{ scale: 0.9 }} className="flex w-60 px-4 py-3 mt-8 bg-black rounded border border-neutral-800 hover:border-white transition-all">
                             <div className="flex gap-2 items-center">

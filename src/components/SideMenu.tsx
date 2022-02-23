@@ -1,10 +1,10 @@
 import { FiGithub, FiTwitter } from "react-icons/fi";
 import { SiGithubsponsors } from "react-icons/si";
-import { HiOutlineHome } from "react-icons/hi";
+import { HiOutlineCollection, HiOutlineHome, HiOutlineIdentification } from "react-icons/hi";
 import PageLink from "./PageLink";
 
 // To customize the SideMenu buttons, go to PageLink.tsx to change the style of them.
-// If you want to change the link's between pages then change the href="" in <PageLink> and make sure to also modify the file names of page2 - page4.tsx including the "export default function Page2() {"
+// If you want to change the link's between pages then change the href="" in <PageLink> and <MobileMenu> and make sure to also modify the file names of the pages for example cards.tsx or page4.tsx including the exported function name "export default function Page4() {"
 
 export const SideMenu = () => {
     return (
@@ -16,14 +16,16 @@ export const SideMenu = () => {
                         <p>Home</p>
                     </div>
                 </PageLink>
-                <PageLink href={"/page2"}>
+                <PageLink href={"/about"}>
                     <div className="flex gap-2 rounded px-4 py-2 items-center">
-                        <p>Page 2</p>
+                        <HiOutlineIdentification className="text-2xl"/>
+                        <p>About</p>
                     </div>
                 </PageLink>
-                <PageLink href={"/page3"}>
+                <PageLink href={"/cards"}>
                     <div className="flex gap-2 rounded px-4 py-2 items-center">
-                        <p>Page 3</p>
+                        <HiOutlineCollection className="text-2xl"/>
+                        <p>Cards</p>
                     </div>
                 </PageLink>
                 <PageLink href={"/page4"}>

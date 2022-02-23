@@ -1,7 +1,9 @@
-# Voltages Personal/Portfolio Website Template
+# Voltages Personal Website Template
 
-Next.js personal website/portfolio template using TypeScript + useful packages. 
-Kickstart ur productivity and ur own personal/portfolio website, without the hassle of having to set up and configure a new project while also having to design the whole website
+[]()
+[![Preview of site](https://cow.voltages.me/img/temp-voltages-me.png)](https://temp.voltages.me)
+A personal website template using TypeScript, Next.js + other useful packages.
+Kickstart ur own personal website, without the hassle of having to set up and configure a new project while also having to design the whole website. 
 
 Template used to make this: https://github.com/cnrad/next-template.git
 

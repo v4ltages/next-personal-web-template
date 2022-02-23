@@ -1,11 +1,12 @@
 import { FiGithub, FiTwitter } from "react-icons/fi";
 import { SiGithubsponsors } from "react-icons/si";
-import { HiOutlineHome, HiOutlineMenu } from "react-icons/hi";
+import { HiOutlineCollection, HiOutlineHome, HiOutlineIdentification, HiOutlineMenu } from "react-icons/hi";
 import PageLink from "./PageLink";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
-// To customize the MobileMenu buttons, go to PageLink.tsx to change the style of them.
-// If you want to change the link's between pages then change the href="" in <PageLink> and make sure to also modify the file names of page2 - page4.tsx including the "export default function Page2() {"
+// To customize the SideMenu buttons, go to PageLink.tsx to change the style of them.
+// If you want to change the link's between pages then change the href="" in <PageLink> and <MobileMenu> and make sure to also modify the file names of the pages for example cards.tsx or page4.tsx including the exported function name "export default function Page4() {"
 
 export const MobileMenu = () => {
 
@@ -13,9 +14,9 @@ export const MobileMenu = () => {
 
     return (
     <>
-        <button onClick={() => setMobileMenu(!openMobileMenu)}>
-            <HiOutlineMenu className="md:hidden flex text-3xl text-white"/>
-        </button>
+        <motion.button whileHover={{ scale: 0.97 }} whileTap={{ scale: 0.9 }} onClick={ () => setMobileMenu(!openMobileMenu)}>
+            <HiOutlineMenu className="md:hidden text-zinc-300 hover:text-white flex text-3xl text-"/>
+        </motion.button>
         {openMobileMenu && <MobileContent/>}
     </>
     );
@@ -23,22 +24,24 @@ export const MobileMenu = () => {
 
 const MobileContent = () => {
     return (
-        <div className="fixed bottom-0 left-0 right-0 h-[100vh] mb-24 bg-black border-b border-neutral-800 text-zinc-300 justify-between flex-col z-20">
-            <menu className="flex mt-24 flex-col p-4 gap-4 font-semibold">
+        <motion.div className="fixed bottom-0 left-0 right-0 h-[100vh] mb-24 bg-black border-b border-neutral-800 text-zinc-300 justify-between flex-col z-20">
+            <menu className="flex mt-48 flex-col p-4 gap-4 font-semibold">
                 <PageLink href={"/"}>
                     <div className="flex gap-2 rounded px-4 py-2 items-center">
                         <HiOutlineHome className="text-2xl"/> 
                         <p>Home</p>
                     </div>
                 </PageLink>
-                <PageLink href={"/page2"}>
+                <PageLink href={"/about"}>
                     <div className="flex gap-2 rounded px-4 py-2 items-center">
-                        <p>Page 2</p>
+                        <HiOutlineIdentification className="text-2xl"/>
+                        <p>About</p>
                     </div>
                 </PageLink>
-                <PageLink href={"/page3"}>
+                <PageLink href={"/cards"}>
                     <div className="flex gap-2 rounded px-4 py-2 items-center">
-                        <p>Page 3</p>
+                        <HiOutlineCollection className="text-2xl"/>
+                        <p>Cards</p>
                     </div>
                 </PageLink>
                 <PageLink href={"/page4"}>
@@ -60,6 +63,6 @@ const MobileContent = () => {
                     </a>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 };

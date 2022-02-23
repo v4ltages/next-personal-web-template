@@ -8,7 +8,7 @@ import { motion } from "framer-motion"
 // Change the style of the links: https://tailwindcss.com/docs/
 
 const PageLink: FC<{href: string}> = ({href, children}) => {
-   const router = useRouter();
+  const router = useRouter();
 
   return (
     <Link href={href}>
