@@ -8,7 +8,7 @@ import PageLink from "./PageLink";
 
 export const SideMenu = () => {
     return (
-        <aside className="hidden md:fixed w-48 h-screen border-r bg-black border-neutral-800 text-zinc-300 md:flex justify-between flex-col z-10">
+        <aside className="overflow-hidden transition-all -translate-x-48 md:translate-x-0 fixed w-48 h-screen border-r bg-black border-neutral-800 text-zinc-300 md:flex justify-between flex-col z-10">
             <menu className="flex flex-col p-4 gap-4 font-semibold">
                 <PageLink href={"/"}>
                     <div className="flex gap-2 rounded px-4 py-2 items-center">
