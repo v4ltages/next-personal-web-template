@@ -15,7 +15,7 @@ const Home: NextPage = () => {
             </Head>
             <SideMenu/>
             <div className="h-[100vh] flex flex-col items-center justify-center text-zinc-300 text-3xl font-semibold">
-                <motion.div animate={{ opacity: [0, 1], x: [-20, 0] }} transition={{ duration: 0.4 }} className="md:pl-56 pl-8 pr-8 flex flex-col md:flex-row transition-all">
+                <motion.div animate={{ opacity: [0, 1], x: [-20, 0] }} transition={{ duration: 0.4 }} className="md:pl-56 pl-8 pr-8 flex flex-col md:flex-row">
                     <div>
                         <Image src={profilePic} alt="avatar" layout="fixed" className="rounded-2xl"width={128} height={128}/>
                     </div>
